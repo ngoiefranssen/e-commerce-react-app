@@ -50,7 +50,7 @@ const Products = () => {
                 {filter.map((product) =>{
                     return(
                         <>
-                            <div className='clo-md-3'>
+                            <div className='col-md-3'>
                                 <div class="card h-1000  text-center p-4" key={product.id}>
                                     <img src={product.image} class="card-img-top" alt={product.title} />
                                     <div class="card-body">
