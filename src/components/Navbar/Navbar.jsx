@@ -43,9 +43,15 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="buttons">
-              <button className="btn btn-outline-dark">
-                <i className=""></i> Login
-              </button>
+              <a className="btn btn-outline-dark">
+                <i className="fa fa-sign-in me-1"></i> Sing-In
+              </a>
+              <a className="btn btn-outline-dark">
+                <i className="fa fa-sign-in me-2 ms-2"></i> Sing-Up
+              </a>
+              <a className="btn btn-outline-dark">
+                <i className="fa fa-sign-in me-1 ms-2"></i> Card(0)
+              </a>
             </div>
           </div>
         </div>
