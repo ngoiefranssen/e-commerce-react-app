@@ -5,7 +5,7 @@ const Home = () => {
   return(
     <div className="hero">
         <div className="card text-bg-dark">
-            <img src="" class="card-img" alt="...">
+            <img src="/assets/star.jpg" class="card-img" alt="Background" />
             <div class="card-img-overlay">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">
