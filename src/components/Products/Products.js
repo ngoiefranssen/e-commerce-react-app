@@ -13,15 +13,16 @@ const Products = () => {
         const getProducts = async () =>{
 
             setLoading(true);
+
             const responseData = await fetch('https://fakestoreapi.com/products');
 
             if(componentMounted)
             {
                 setData(await responseData.clone().json());
                 setFilter(await responseData.json());
-                setLoading(true);
+                setLoading(false);
                 console.log(filter);
-            }
+            }; 
 
             return () => { componentMounted = false }
         };
