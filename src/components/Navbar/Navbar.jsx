@@ -47,10 +47,10 @@ const Navbar = () => {
                 <i className="fa fa-sign-in me-1"></i> Sing-In
               </a>
               <a className="btn btn-outline-dark">
-                <i className="fa fa-sign-in me-2 ms-2"></i> Sing-Up
+                <i className="fa fa-user-plus me-2 ms-2"></i> Sing-Up
               </a>
               <a className="btn btn-outline-dark">
-                <i className="fa fa-sign-in me-1 ms-2"></i> Card(0)
+                <i className="fa fa-shopping-cart me-1 ms-2"></i> Card(0)
               </a>
             </div>
           </div>
