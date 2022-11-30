@@ -20,7 +20,7 @@ const Products = () => {
                 setData(await responseData.clone().json());
                 setFilter(await responseData.json());
                 setLoading(true);
-                console.log(filter)
+                console.log(filter);
             }
 
             return () => { componentMoundted = false; }
@@ -31,9 +31,7 @@ const Products = () => {
 
     const Loading = () => {
         return(
-            <div className=''>
-                loading.........
-            </div>
+            <> Loading.... </>
         );
     };
 
@@ -44,9 +42,8 @@ const Products = () => {
                 <button className='btn btn-outline-dark me-2'>All</button>
                 <button className='btn btn-outline-dark me-2'>Men's Closing</button>
                 <button className='btn btn-outline-dark me-2'>Womem's Closing</button>
-                <button className='btn btn-outline-dark me-2'></button>
-                <button className='btn btn-outline-dark me-2'></button>
-                <button className='btn btn-outline-dark me-2'></button>
+                <button className='btn btn-outline-dark me-2'>Jewelery</button>
+                <button className='btn btn-outline-dark me-2'>Electornic</button>
             </div>
         );
     }
