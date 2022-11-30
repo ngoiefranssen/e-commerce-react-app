@@ -29,6 +29,18 @@ const Products = () => {
         getProducts();
     }, []);
 
+    const Loading = () => {
+        return(
+            <div className=''>
+                loading.........
+            </div>
+        );
+    };
+
+    const ShowLoading = () => {
+
+        
+    }
 
   return (
     <div>
@@ -41,7 +53,7 @@ const Products = () => {
             </div>
         </div>
         <div className='row justify-content-center'>
-            {loading ? <loading /> : <showLoading />}
+            {loading ? <Loading /> : <ShowLoading />}
         </div>
       </div>
     </div>
