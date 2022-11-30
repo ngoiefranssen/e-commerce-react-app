@@ -41,7 +41,7 @@ const Products = () => {
             </div>
         </div>
         <div className='row justify-content-center'>
-
+            {loading ? <loading /> : <showLoading />}
         </div>
       </div>
     </div>
