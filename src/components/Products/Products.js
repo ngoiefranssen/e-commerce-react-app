@@ -41,12 +41,12 @@ const Products = () => {
             </div>
         </div>
         <div className='row justify-content-center'>
-            
+
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
 
