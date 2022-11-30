@@ -11,6 +11,7 @@ const Products = () => {
     useEffect(() =>{
 
         const getProducts = async () =>{
+            
             setLoading(true);
             const responseData = fetch('https://fakestoreapi.com/products');
 
@@ -24,6 +25,8 @@ const Products = () => {
 
             return () => { componentMoundted = false; }
         };
+
+        getProducts();
     }, []);
 
 
