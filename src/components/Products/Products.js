@@ -53,7 +53,9 @@ const Products = () => {
                                 <div class="card h-1000  text-center p-4" key={product.id}>
                                     <img src={product.image} class="card-img-top" alt={product.title} />
                                     <div class="card-body">
-                                        <h5 class="card-title" height="250px">{ product.title.substring(0, 12) }</h5>
+                                        <h5 class="card-title" height="250px">
+                                            { product.title.substring(0, 12) }
+                                        </h5>
                                         <p class="card-text">${ product.price }</p>
                                         <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
