@@ -1,4 +1,5 @@
 import React from 'react';
+import Products from '../Products/Products';
 
 const Home = () => {
 
@@ -19,6 +20,7 @@ const Home = () => {
               </div>
             </div>
         </div>
+        <Products />
     </div>
   )
 
