@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 const Products = () => {
 
@@ -6,16 +6,16 @@ const Products = () => {
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
 
-    let componentMoundted = true;
+    let componentMounted = true;
 
     useEffect(() =>{
 
         const getProducts = async () =>{
 
             setLoading(true);
-            const responseData = fetch('https://fakestoreapi.com/products');
+            const responseData = await fetch('https://fakestoreapi.com/products');
 
-            if(componentMoundted)
+            if(componentMounted)
             {
                 setData(await responseData.clone().json());
                 setFilter(await responseData.json());
@@ -23,7 +23,7 @@ const Products = () => {
                 console.log(filter);
             }
 
-            return () => { componentMoundted = false; }
+            return () => { componentMounted = false }
         };
 
         getProducts();
