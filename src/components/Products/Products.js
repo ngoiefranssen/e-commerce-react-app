@@ -41,7 +41,7 @@ const Products = () => {
         return(
             <>
                 <div className='buttons d-flex  justify-content-center mb-5 pb-5'>
-                    <button className='btn btn-outline-dark'>All</button>
+                    <button className='btn btn-outline-dark me-2'>All</button>
                     <button className='btn btn-outline-dark me-2'>Men's Closing</button>
                     <button className='btn btn-outline-dark me-2'>Womem's Closing</button>
                     <button className='btn btn-outline-dark me-2'>Jewelery</button>
