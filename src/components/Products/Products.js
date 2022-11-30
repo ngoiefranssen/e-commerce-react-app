@@ -17,7 +17,12 @@ const Products = () => {
             if(componentMoundted)
             {
                 setData(await responseData.clone().json());
+                setFilter(await responseData.json());
+                setLoading(true);
+                console.log(filter)
             }
+
+            return () => { componentMoundted = false; }
         };
     }, []);
 
