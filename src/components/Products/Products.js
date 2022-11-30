@@ -9,8 +9,8 @@ const Products = () => {
     let componentMoundted = true;
 
     useEffect(() =>{
-        
-    }, [])
+
+    }, []);
 
   return (
     <div>
