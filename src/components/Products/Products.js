@@ -38,15 +38,34 @@ const Products = () => {
     const ShowLoading = () => {
 
         return(
-            <div className='buttons d-flex  justify-content-center mb-5 pb-5'>
-                <button className='btn btn-outline-dark me-2'>All</button>
-                <button className='btn btn-outline-dark me-2'>Men's Closing</button>
-                <button className='btn btn-outline-dark me-2'>Womem's Closing</button>
-                <button className='btn btn-outline-dark me-2'>Jewelery</button>
-                <button className='btn btn-outline-dark me-2'>Electornic</button>
-            </div>
+            <>
+                <div className='buttons d-flex  justify-content-center mb-5 pb-5'>
+                    <button className='btn btn-outline-dark'>All</button>
+                    <button className='btn btn-outline-dark me-2'>Men's Closing</button>
+                    <button className='btn btn-outline-dark me-2'>Womem's Closing</button>
+                    <button className='btn btn-outline-dark me-2'>Jewelery</button>
+                    <button className='btn btn-outline-dark me-2'>Electornic</button>
+                </div>
+                {filter.map((product) =>{
+                    return(
+                        <>
+                            <div className='clo-md-3'>
+                                <div class="card">
+                                    <img src={product.image} class="card-img-top" alt={product.title} />
+                                    <div class="card-body">
+                                        <h5 class="card-title">{ product.title }</h5>
+                                        <p class="card-text">${ product.price }</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </>
+                    )
+                })}
+            </>
+            
         );
-    }
+    };
 
   return (
     <div>
