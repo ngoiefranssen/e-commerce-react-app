@@ -40,6 +40,9 @@ const Products = () => {
                 </h1>
             </div>
         </div>
+        <div className='row justify-content-center'>
+            
+        </div>
       </div>
     </div>
   )
