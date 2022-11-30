@@ -46,7 +46,7 @@ const Navbar = () => {
               <a className="btn btn-outline-dark">
                 <i className="fa fa-sign-in me-1"></i> Sing-In
               </a>
-              <a className="btn btn-outline-dark ms-2">
+              <a className="btn btn-outline-success ms-2">
                 <i className="fa fa-user-plus me-2 ms"></i> Sing-Up
               </a>
               <a className="btn btn-outline-dark ms-2">
