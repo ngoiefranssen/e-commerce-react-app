@@ -24,16 +24,16 @@ const Products = () => {
                 console.log(filter);
             }; 
 
-            return () => { componentMounted = false }
-        };
+            return () => { 
 
+                componentMounted = false;
+            };
+        };
         getProducts();
     }, []);
 
     const Loading = () => {
-        return(
-            <> Loading.... </>
-        );
+        return( <> Loading.... </> );
     };
 
     const ShowLoading = () => {
