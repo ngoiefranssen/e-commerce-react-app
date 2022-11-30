@@ -10,6 +10,9 @@ const Products = () => {
 
     useEffect(() =>{
 
+        const getProducts = async () =>{
+
+        };
     }, []);
 
   return (
