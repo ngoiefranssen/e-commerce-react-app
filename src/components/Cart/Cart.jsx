@@ -1,11 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-const Cart = () => {
-  const [product, setProduct] = useSelector();
-
-  const handleButton = () => {};
-
+const Cart = product => {
+  const handleButton = useSelector(state => state.handleButton);
   return (
     <>
       <div className="row">

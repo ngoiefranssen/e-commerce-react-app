@@ -59,7 +59,7 @@ const Navbar = () => {
                 Sing-Up
               </NavLink>
               <NavLink className="btn btn-outline-dark ms-2">
-                <i className="fa fa-shopping-cart me-1" to="/cart"></i> Card(
+                <i className="fa fa-shopping-cart me-1" to="/cart"></i> Cart(
                 {state.length});
               </NavLink>
             </div>
