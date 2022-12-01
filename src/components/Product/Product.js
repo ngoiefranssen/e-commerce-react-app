@@ -16,18 +16,33 @@ const Product = () =>{
             setLoading( false);
         }
         getProduct();
-    },[input]);
+    },[]);
 
     const Loading = () =>{
         return(
-            
+            <>
+                Loading.....
+            </>
         );
-    }
+    };
+
+    const ShowProdcut = () =>{
+        
+        return(
+            <div className="container">
+                <div className="">
+
+                </div>
+            </div>
+        );
+    };
     
     return(
         <div>
             <div className="container">
-                {loading ? <Loading /> : < ShowProdcut/>}
+                <div className="row">
+                    { loading ? <Loading/> : < ShowProdcut/> }
+                </div>
             </div>
         </div>
     );
