@@ -23,7 +23,11 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-NavLink active" aria-current="page" to="/">
+                <NavLink
+                  className="nav-NavLink active"
+                  aria-current="page"
+                  to="/"
+                >
                   Home
                 </NavLink>
               </li>
@@ -45,13 +49,14 @@ const Navbar = () => {
             </ul>
             <div className="buttons">
               <NavLink className="btn btn-outline-dark">
-                <i className="fa fa-sign-in me-1" to='/login'></i> Login
+                <i className="fa fa-sign-in me-1" to="/login"></i> Login
               </NavLink>
               <NavLink className="btn btn-outline-success ms-2">
-                <i className="fa fa-user-plus me-2 ms" to='/sing_up'></i> Sing-Up
+                <i className="fa fa-user-plus me-2 ms" to="/sing_up"></i>{' '}
+                Sing-Up
               </NavLink>
               <NavLink className="btn btn-outline-dark ms-2">
-                <i className="fa fa-shopping-cart me-1" to='/cart'></i> Card(0)
+                <i className="fa fa-shopping-cart me-1" to="/cart"></i> Card(0)
               </NavLink>
             </div>
           </div>
