@@ -50,7 +50,7 @@ const Product = () =>{
                     <button className="btn btn-outline-dark px-4 py-2">
                         Add to cart
                     </button>
-                    <NavLink className="btn btn-outline-dark px-4 py-2">
+                    <NavLink className="btn btn-outline-dark ms-2 px-3 py-2">
                         Add to cart
                     </NavLink>
                 </div>
@@ -60,8 +60,8 @@ const Product = () =>{
     
     return(
         <div>
-            <div className="container">
-                <div className="row">
+            <div className="container py-5">
+                <div className="row py-5">
                     { loading ? <Loading/> : < ShowProdcut/> }
                 </div>
             </div>
