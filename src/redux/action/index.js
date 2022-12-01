@@ -1,6 +1,6 @@
 
 
-const addCard = (product) =>{
+const addCart = (product) =>{
     
     return{
         type : 'ADDITEM',
