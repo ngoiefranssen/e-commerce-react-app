@@ -55,7 +55,7 @@ const Products = () => {
 
     // Filter to products
     const filterProduct = (cat) =>{
-        const updateDataList = data.filter((a) => a.category === cat);
+        const updateDataList = data.filter((f) => f.category === cat);
         setFilter(updateDataList);
     };
 
