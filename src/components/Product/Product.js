@@ -17,10 +17,19 @@ const Product = () =>{
         }
         getProduct();
     },[input]);
+
+    const Loading = () =>{
+        return(
+            
+        );
+    }
     
     return(
-        <>
-        </>
+        <div>
+            <div className="container">
+                {loading ? <Loading /> : < ShowProdcut/>}
+            </div>
+        </div>
     );
 }; 
 export default Product;
