@@ -66,7 +66,10 @@ const Product = () => {
           </p>
           <h3 className="display-6 fw-bold my-4">$ {product.price}</h3>
           <p className="lead">{product.description}</p>
-          <button className="btn btn-outline-dark px-4 py-2">
+          <button
+            className="btn btn-outline-dark px-4 py-2"
+            onClick={() => addCart(product)}
+          >
             Add to cart
           </button>
           <NavLink className="btn btn-outline-dark ms-2 px-3 py-2">

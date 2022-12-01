@@ -40,6 +40,7 @@ const handleCard = (state=card, action) =>{
                 break;
     
         default:
+            return state;
             break;
     }
 
