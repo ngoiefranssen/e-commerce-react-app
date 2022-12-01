@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
 
@@ -88,7 +88,7 @@ const Products = () => {
                                             { product.title.substring(0, 12) }..
                                         </h5>
                                         <p class="card-text lead fw-bold">${ product.price }</p>
-                                        <NavLink to={`/product/${product.id}`} class="btn btn-outline-primary">By now</NavLink>
+                                        <Link to={`/product/${product.id}`} class="btn btn-outline-primary">By now</Link>
                                     </div>
                                 </div>
                             </div>

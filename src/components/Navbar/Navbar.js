@@ -1,14 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light bg-white py-4 shadow-sm">
         <div className="container">
-          <NavLink className="navbar-brand fw-bold fs-4" to="/">
+          <Link className="navbar-brand fw-bold fs-4" to="/">
             Collection
-          </NavLink>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,36 +23,36 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link active" aria-current="page" to="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/products">
+                <Link className="nav-link" to="/products">
                   Products
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about">
+                <Link className="nav-link" to="/about">
                   About
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
+                <Link className="nav-link" to="/contact">
                   Contact
-                </NavLink>
+                </Link>
               </li>
             </ul>
             <div className="buttons">
-              <NavLink className="btn btn-outline-dark">
+              <Link className="btn btn-outline-dark">
                 <i className="fa fa-sign-in me-1" to='/login'></i> Login
-              </NavLink>
-              <NavLink className="btn btn-outline-success ms-2">
+              </Link>
+              <Link className="btn btn-outline-success ms-2">
                 <i className="fa fa-user-plus me-2 ms" to='/sing_up'></i> Sing-Up
-              </NavLink>
-              <NavLink className="btn btn-outline-dark ms-2">
+              </Link>
+              <Link className="btn btn-outline-dark ms-2">
                 <i className="fa fa-shopping-cart me-1" to='/cart'></i> Card(0)
-              </NavLink>
+              </Link>
             </div>
           </div>
         </div>

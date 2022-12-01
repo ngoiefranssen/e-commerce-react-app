@@ -29,11 +29,15 @@ const Product = () =>{
     const ShowProdcut = () =>{
         
         return(
-            <div className="container">
-                <div className="">
-
+            <>
+                <div className="col-md-6">
+                    <img src={product.image} alt={product.title} height="400px"
+                        width="400px"/>
+                <div className="col-md-6">
+                    <h4 className=""></h4>
                 </div>
-            </div>
+                </div>
+            </>
         );
     };
     
