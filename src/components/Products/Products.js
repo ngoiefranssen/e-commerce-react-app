@@ -85,7 +85,7 @@ const Products = () => {
                                          alt={product.title} height="250px"/>
                                     <div className="card-body">
                                         <h5 className="card-title mb-0">
-                                            { product.title.substring(0, 12) }..
+                                            { product.title.substring(0, 12) }
                                         </h5>
                                         <p className="card-text lead fw-bold">${ product.price }</p>
                                         <NavLink to={`/product/${product.id}`} className="btn btn-outline-primary">By now</NavLink>
