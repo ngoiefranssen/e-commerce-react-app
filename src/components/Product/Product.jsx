@@ -10,6 +10,11 @@ const Product = () => {
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  const dispatch = useDispatch();
+  const addProduct = product => {
+    dispatch(addCart(product));
+  };
+
   useEffect(() => {
     const getProductData = async () => {
       setLoading(true);
