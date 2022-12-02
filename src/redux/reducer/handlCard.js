@@ -4,6 +4,7 @@ const cart = []
 //
 
 const handleCard = (state = cart, action) => {
+
     const product = action.payload;
 
     switch (action.type) {

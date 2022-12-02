@@ -1,6 +1,7 @@
 
+// For add item to cart
 
-const addCart = (product) => {
+export const addCart = (product) => {
 
     return {
         type: 'ADDITEM',
@@ -8,7 +9,9 @@ const addCart = (product) => {
     };
 };
 
-const deleteCart = (product) => {
+// For delete item from cart
+
+export const deleteCart = (product) => {
 
     return {
         type: 'DELETEITEM',
