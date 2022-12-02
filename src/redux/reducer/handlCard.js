@@ -31,6 +31,7 @@ const handleCard = (state = cart, action) => {
             break;
 
         case 'DELETEITEM':
+
             const _exist = state.find((f) => f.id === product.id);
 
             if (_exist.qty === 1) {
