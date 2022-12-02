@@ -46,7 +46,7 @@ const handleCart = (state = cart, action) => {
         default:
             return state;
             break;
-    }
+    };
 
 };
 
