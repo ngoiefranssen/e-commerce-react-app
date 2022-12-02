@@ -5,18 +5,20 @@ import { useParams } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 
-const Product = () => {
+const Product = () =>
+{
   const { id } = useParams();
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const dispatch = useDispatch();
   
-  const addProduct = product => {
+  const addProduct = (product) => {
     dispatch(addCart(product));
   };
 
   useEffect(() => {
+    
     const getProductData = async () => {
       setLoading(true);
       const responseDataProduct = await fetch(
