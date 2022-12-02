@@ -62,7 +62,7 @@ const Product = () => {
           <h1 className="display-5">{product.title}</h1>
           <p className="lead fw-bolder">
             Rating : {product.rating && product.rating.rate}
-            <i className="fa fa-statr"></i>
+            <i className="fa fa-star"></i>
           </p>
           <h3 className="display-6 fw-bold my-4">$ {product.price}</h3>
           <p className="lead">{product.description}</p>
@@ -72,7 +72,7 @@ const Product = () => {
           >
             Add to cart
           </button>
-          <NavLink className="btn btn-outline-dark ms-2 px-3 py-2">
+          <NavLink to='/cart' className="btn btn-outline-dark ms-2 px-3 py-2">
             Go to cart
           </NavLink>
         </div>
