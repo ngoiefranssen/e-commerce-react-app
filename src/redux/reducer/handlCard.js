@@ -3,7 +3,7 @@ const cart = []
 
 //
 
-const handleCard = (state=cart, action) =>{
+const handleCard = (state = cart, action) => {
     const product = action.payload;
 
     switch (action.type) {
@@ -11,36 +11,35 @@ const handleCard = (state=cart, action) =>{
             //check if product is already exist
             const exist = state.find((f) => f.id === product.id);
 
-            if(exist)
-            {
+            if (exist) {
                 // increase the quantity
-                return state.map((f) => 
-                        f.id  === product.id ? {...f, qty: f.qty + 1} : f
+                return state.map((f) =>
+                    f.id === product.id ? { ...f, qty: f.qty + 1 } : f
                 );
-            }else{
+            } else {
                 const product = action.payload;
                 return [
                     ...state,
                     {
                         ...product,
-                        qty : 1,
+                        qty: 1,
                     },
                 ];
             };
-            
+
             break;
 
-            case 'DELETEITEM':
-                const _exist = state.find((f) => f.id === product.id);
+        case 'DELETEITEM':
+            const _exist = state.find((f) => f.id === product.id);
 
-                if(_exist.qty === 1){
-                    return state.filter((f) => f.id !== _exist.id);
-                }else{
-                    return state.map((f) => f.id === product.id ? {...f, qty: f.qty-1} : f);
-                }
+            if (_exist.qty === 1) {
+                return state.filter((f) => f.id !== _exist.id);
+            } else {
+                return state.map((f) => f.id === product.id ? { ...f, qty: f.qty - 1 } : f);
+            }
 
-                break;
-    
+            break;
+
         default:
             return state;
             break;
@@ -48,4 +47,4 @@ const handleCard = (state=cart, action) =>{
 
 };
 
-export default handleCard
+export default handleCard;
