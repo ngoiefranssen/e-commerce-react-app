@@ -9,11 +9,12 @@ const handleCard = (state = cart, action) => {
 
     switch (action.type) {
         case 'ADDITEM':
-            //check if product is already exist
+
+            // vérifier si le produit existe déjà
             const exist = state.find((f) => f.id === product.id);
 
             if (exist) {
-                // increase the quantity
+                // augmenter la quantité
                 return state.map((f) =>
                     f.id === product.id ? { ...f, qty: f.qty + 1 } : f
                 );
