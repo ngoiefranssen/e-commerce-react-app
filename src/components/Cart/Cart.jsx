@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 
 const Cart = product => {
   const handleButton = useSelector(state => state.handleButton);
+
   return (
     <>
       <div className="row">

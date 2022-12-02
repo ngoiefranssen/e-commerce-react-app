@@ -68,12 +68,12 @@ const Product = () => {
           <p className="lead">{product.description}</p>
           <button
             className="btn btn-outline-dark px-4 py-2"
-            onClick={() => addCart(product)}
+            onClick={() => addProduct(product)}
           >
             Add to cart
           </button>
           <NavLink className="btn btn-outline-dark ms-2 px-3 py-2">
-            Add to cart
+            Go to cart
           </NavLink>
         </div>
       </>
