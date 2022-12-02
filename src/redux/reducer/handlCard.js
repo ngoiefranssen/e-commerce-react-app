@@ -3,7 +3,7 @@ const cart = []
 
 //
 
-const handleCard = (state = cart, action) => {
+const handleCart = (state = cart, action) => {
 
     const product = action.payload;
 
@@ -50,4 +50,4 @@ const handleCard = (state = cart, action) => {
 
 };
 
-export default handleCard;
+export default handleCart;
